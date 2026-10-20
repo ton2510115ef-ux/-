@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>企業情報一覧</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>企業情報一覧</h1>
+        
+        <!-- 企業名一覧（ボタン） -->
+        <div id="company-list">
+            <button class="company-btn" data-name="株式会社ｊｉｇ．ｊｐ" data-address="福井県鯖江市横越町第１０号３４番地１" data-info="○○○">jig.jp</button>
+            <button class="company-btn" data-name="株式会社福井銀行" data-address="福井県福井市順化1丁目1番1号" data-info="地方銀行">福井銀行</button>
+            <button class="company-btn" data-name="株式会社ゲンキー" data-address="福井県坂井市丸岡町下久米田38-33" data-info="ドラッグストア">ゲンキー</button>
+        </div>
+
+        <!-- 詳細表示エリア -->
+        <div id="company-detail" class="hidden">
+            <h2>詳細情報</h2>
+            <p><strong>会社名：</strong><span id="detail-name"></span></p>
+            <p><strong>住所：</strong><span id="detail-address"></span></p>
+            <p><strong>その他情報：</strong><span id="detail-info"></span></p>
+        </div>
+
+        <!-- CSVダウンロードボタン -->
+        <div class="download-area">
+            <button id="download-btn">データをCSVでダウンロード</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
